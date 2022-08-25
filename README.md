@@ -1,8 +1,8 @@
 # Alexander's personal portfolio
-En este documento se presenta el desarrollo del codigo fuente del portafolio personal web
+En este repositorio se muestra el codigo fuente del proyecto personal
 
 ## Contenido
-Consta de 6 secciones
+Consta de cuatro directorios, un md, un index y un gitignore
 
 ## Contacto
 aledt2103@gmail.com
