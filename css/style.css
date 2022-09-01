@@ -1,1 +1,147 @@
-body{}
+/*Primero se establece los estilos (diseño y grid) por defualt de Bootstrap 5.2
+y despues se añade el estilo personalizado*/
+
+/*Estilo css personalizado */
+/* fuente importada de Google*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap');
+
+/*estilo modificado de templates de bootstrap*/
+.navbar-toggler-icon{
+    background-color: #cfc4bf;
+}
+.btn-primary{
+    background-color: #f0bc9a;
+}
+.txt{
+    color: #cfc4bf;
+}
+.list1{
+    background-color: #F0BC9A;
+    color: #492811;
+}
+.card{
+    background-color: #362215;
+}
+
+/* Estilo css para la versión movil*/
+@media only screen and (max-width: 575px){
+    body{
+        background-color: #1d1c1c;
+    }
+    .nav1{
+        background-color: #1E1B19;
+        font-family: 'Roboto Slab',serif;
+        text-align: center;
+    }    
+    .conM1{ /*conM1 = contenedor Movil 1*/
+        text-align: center;
+        justify-content: center;
+        font-family: 'Roboto Slab', serif;
+        
+    }
+    .rm1{ /*Filas movil 1*/
+        flex-direction: column;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 0px;
+    }
+    .rm2{
+        flex-direction: column;
+        padding-top: 0px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 0px;
+    }
+    
+    .cardm1{/*diseños para cada carta cardm1 = carta Movil 1*/
+        background-color: #28231f;
+        padding: 15px;
+        border-radius: 40px 40px 0px 0px;
+        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .cardm2{
+        background-color: #4c4541;
+        padding: 15px;
+        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .cardm3{
+        background-color: #28231f;
+        padding: 15px;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+}    
+/* estilo css para la version tablet*/
+@media only screen and (min-width: 576px){
+    body{
+        background-color: #1d1c1c;
+    }
+    .nav1{
+        background-color: #1E1B19;
+        font-family: 'Roboto Slab',serif;
+        text-align: center;
+    }
+    .txt{
+        color: #cfc4bf;
+    }
+    .list1{
+        background-color: #F0BC9A;
+        color: #492811
+    }
+    .conT1{
+        text-align: center;
+        justify-content: center;
+        font-family: 'Roboto Slab',serif;
+    }
+    .rt1{ /*contenedor en tablet*/
+        flex-direction: row;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 0px;
+    }
+    .rt2{ 
+        flex-direction: row;
+        padding-top: 0px;
+        padding-left: 25px;
+        padding-right: 25px;
+    } 
+   
+    .cardt1{ /*diseños para cada carta en tablet*/
+        background-color: #28231f;
+        padding: 15px;
+        border-radius: 40px 40px 0px 0px;
+        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .cardt2{
+        background-color: #4c4541;
+        padding: 15px;
+        border-radius: 0px 0px 0px 16px;
+        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .cardt3{
+        background-color: #4c4541;
+        padding: 15px;
+        border-radius: 0px 0px 16px 0px;
+        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+}
+/* estilo css para la versión desktop*/
+@media only screen and (min-width: 992px){
+    body{
+        background-color: #1d1c1c;
+    }
+    .nav1{
+        background-color: #1E1B19;
+        font-family: 'Roboto Slab',serif;
+        text-align: center;
+    }
+    .txt{
+        color: #cfc4bf;
+    }
+    .list1{
+        background-color: #F0BC9A;
+        color: #492811
+    }
+}
