@@ -1,43 +1,196 @@
-/*Primero se establece los estilos (diseño y grid) por defualt de Bootstrap 5.2
-y despues se añade el estilo personalizado*/
+/* fuente importada de Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,300;1,8..144,500&display=swap');
+/* estilo parametros generales*/
+body{
+    background: url(../src/backM3.svg);
+    font-family: 'Roboto Slab', serif;
+    background-color: #050609;
+}
+header{
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.navbar{
+    padding: 0px;
 
-/*Estilo css personalizado */
-/* fuente importada de Google*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap');
+}
+.nav1{
+    background-color: #3C0000;
+    font-family: 'Roboto Slab',serif;
+    text-align: center;
+}    
 
-/*estilo modificado de templates de bootstrap*/
-.navbar-toggler-icon{
-    background-color: #cfc4bf;
+hr{
+    border: 2px solid #FEFEDC;
+    color: #FEFEDC;
 }
-.btn-primary{
-    background-color: #f0bc9a;
+.carpetas{
+    color: #050609;
 }
-.txt{
-    color: #cfc4bf;
+a:hover{
+    color: #050609; 
 }
+.btnExp{
+    background-color: #7d553a;
+}
+.accordion-button:not(.collapsed){
+    background-color: #7d553a;
+    color: #FEFEDC;
+}
+.accordion-button:focus{
+    border-color: #FEFEDC;
+}
+
+/*sección para estilo de los textos*/
+.txt01{ /* Titulo principal*/
+    color: #FEFEDC;
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+}
+.txt011{ /*Subtitulo principal*/
+    color: #FEFEDC;
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+}
+.txt013{ /*texto cursiva en sección 03*/
+    font-family: 'Roboto Serif';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    display: flexbox;
+    align-items: center;
+    text-align: justify;
+    color: #050609;
+}
+.txt11{ /*encabezados */
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+    color: #FEFEDC;
+}
+.txt101{ /*texto encabezado */
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #FEFEDC;
+}
+.txt31{ /* titulos sección 3*/
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+    color: #050609;
+}
+.txt41{/*titulos tarjetas*/
+    font-family: 'Roboto Serif';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #050609;
+}
+.txt411{ /*texto terjetas*/
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #000000;
+}
+.txt51{ /* titulos sección 2*/
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FEFEDC;
+}
+.txt511{/*texto sección 2*/
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FEFEDC;
+}
+
 .list1{
-    background-color: #F0BC9A;
-    color: #492811;
+    background-color: #F5D0C5;
+    color: #050609;
+    border-color: #F5D0C5;
 }
 .card{
-    background-color: #362215;
+    background-color: #F5D0C5;
+    border-radius: 10px;
 }
+.navbar-toggler-icon{
+    background-color: #FEFEDC;
+}
+.btn-primary{
+    background-color: #7d553a;
+    border-color: #7d553a;
+}
+.btn:hover{
+    border: none;
+    background-color: #3C0000;
+    color: #FEFEDC;
+}
+.nav-toggler{
+    border: none;
+}
+.nav-toggler:focus{
+    box-shadow: none;
+}
+.btnContacto{
+    border: none;
+    background-color: #FFDCC7;
+    color: #050609;
+    font-family: Roboto Serif;
+}
+
 
 /* Estilo css para la versión movil*/
 @media only screen and (max-width: 575px){
-    body{
-        background-color: #1d1c1c;
+   .conM1{ /*conM1 = contenedor Movil 1*/
+    margin-top: 50px;
     }
-    .nav1{
-        background-color: #1E1B19;
-        font-family: 'Roboto Slab',serif;
-        text-align: center;
-    }    
-    .conM1{ /*conM1 = contenedor Movil 1*/
-        text-align: center;
-        justify-content: center;
-        font-family: 'Roboto Slab', serif;
-        
+    .rm0{
+        background: #D9D9D9;
+        border: 4px solid #FFDCC7;
+        filter: blur(3px);
+        border-radius: 40px 40px 16px 16px;
+
     }
     .rm1{ /*Filas movil 1*/
         flex-direction: column;
@@ -45,6 +198,7 @@ y despues se añade el estilo personalizado*/
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 0px;
+
     }
     .rm2{
         flex-direction: column;
@@ -52,47 +206,40 @@ y despues se añade el estilo personalizado*/
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 0px;
+        z-index: 2;
     }
     
     .cardm1{/*diseños para cada carta cardm1 = carta Movil 1*/
-        background-color: #28231f;
-        padding: 15px;
+        background-color: #3C0000;
+        padding: 25px;
+        border-top: 4px solid #FFDCC7;
+        border-left: 4px solid #FFDCC7;
+        border-right: 4px solid #FFDCC7;
         border-radius: 40px 40px 0px 0px;
-        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+
     }
     .cardm2{
-        background-color: #4c4541;
-        padding: 15px;
-        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+        background-color: #7d553a;
+        padding: 25px;
+        border-left: 4px solid #FFDCC7;
+        border-right: 4px solid #FFDCC7;
     }
     .cardm3{
-        background-color: #28231f;
-        padding: 15px;
+        background-color: #d69f7e;
+        padding: 25px;
+        border-bottom: 4px solid #FFDCC7;
+        border-left: 4px solid #FFDCC7;
+        border-right: 4px solid #FFDCC7;
         border-radius: 0px 0px 10px 10px;
-        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
     }
 }    
 /* estilo css para la version tablet*/
 @media only screen and (min-width: 576px){
-    body{
-        background-color: #1d1c1c;
-    }
-    .nav1{
-        background-color: #1E1B19;
-        font-family: 'Roboto Slab',serif;
-        text-align: center;
-    }
-    .txt{
-        color: #cfc4bf;
-    }
-    .list1{
-        background-color: #F0BC9A;
-        color: #492811
-    }
     .conT1{
+        margin-top: 25px;
+        margin-bottom: 25px;
         text-align: center;
         justify-content: center;
-        font-family: 'Roboto Slab',serif;
     }
     .rt1{ /*contenedor en tablet*/
         flex-direction: row;
@@ -109,39 +256,114 @@ y despues se añade el estilo personalizado*/
     } 
    
     .cardt1{ /*diseños para cada carta en tablet*/
-        background-color: #28231f;
-        padding: 15px;
+        background-color: #3c0000;
+        padding: 30px 50px 30px 50px;
         border-radius: 40px 40px 0px 0px;
-        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+        border-top: 4px solid #FFDCC7;
+        border-left: 4px solid #FFDCC7;
+        border-right: 4px solid #FFDCC7;
     }
     .cardt2{
-        background-color: #4c4541;
-        padding: 15px;
+        background-color: #774936;
+        padding: 30px;
         border-radius: 0px 0px 0px 16px;
-        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+        border-left: 4px solid #FFDCC7;
+        border-bottom: 4px solid #FFDCC7;
+        display: flex;
+        align-items: center;
+        
     }
     .cardt3{
-        background-color: #4c4541;
-        padding: 15px;
+        background-color: #d69f7e;
+        padding: 30px;
         border-radius: 0px 0px 16px 0px;
-        box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.3);
+        border-right: 4px solid #FFDCC7;
+        border-bottom: 4px solid #FFDCC7;
+    }
+    .cardt12{
+        background-color: #774936;
+        padding: 30px;
+        border-radius: 0px 0px 16px 16px;
+        border-left: 4px solid #FFDCC7;
+        border-bottom: 4px solid #FFDCC7;
+        border-right: 4px solid #FFDCC7;
+    }
+    .cardt13{
+        background-color: #d69f7e;
+        padding: 30px;
+        border-radius: 0px 0px 16px 16px;
+        border-right: 4px solid #FFDCC7;
+        border-bottom: 4px solid #FFDCC7;
+        border-left: 4px solid #FFDCC7 ; 
     }
 }
 /* estilo css para la versión desktop*/
 @media only screen and (min-width: 992px){
-    body{
-        background-color: #1d1c1c;
-    }
-    .nav1{
-        background-color: #1E1B19;
-        font-family: 'Roboto Slab',serif;
+    .conT1{
+        margin-top: 25px;
+        margin-bottom: 25px;
         text-align: center;
+        justify-content: center;
     }
-    .txt{
-        color: #cfc4bf;
+    .rt1{ /*contenedor en tablet*/
+        flex-direction: row;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 0px;
     }
-    .list1{
-        background-color: #F0BC9A;
-        color: #492811
+    .rt2{ 
+        flex-direction: row;
+        padding-top: 0px;
+        padding-left: 25px;
+        padding-right: 25px;
+    } 
+   
+    .cardt1{ /*diseños para cada carta en tablet*/
+        background-color: #3c0000;
+        padding: 40px 150px 40px 150px;
+        border-radius: 40px 40px 0px 0px;
+        border-top: 4px solid #FFDCC7;
+        border-left: 4px solid #FFDCC7;
+        border-right: 4px solid #FFDCC7;
+    }
+    .cardt2{
+        background-color: #774936;
+        padding: 75px;
+        border-radius: 0px 0px 0px 16px;
+        border-left: 4px solid #FFDCC7;
+        border-bottom: 4px solid #FFDCC7;
+        display: flex;
+        align-items: center;
+        
+    }
+    .cardt3{
+        background-color: #d69f7e;
+        padding: 75px;
+        border-radius: 0px 0px 16px 0px;
+        border-right: 4px solid #FFDCC7;
+        border-bottom: 4px solid #FFDCC7;
+    }
+    .cardt12{
+        background-color: #774936;
+        padding: 50px 150px 50px 150px;
+        border-radius: 0px 0px 16px 16px;
+        border-left: 4px solid #FFDCC7;
+        border-bottom: 4px solid #FFDCC7;
+        border-right: 4px solid #FFDCC7;
+    }
+    .cardt13{
+        background-color: #d69f7e;
+        padding: 30px;
+        border-radius: 0px 0px 16px 16px;
+        border-right: 4px solid #FFDCC7;
+        border-bottom: 4px solid #FFDCC7;
+        border-left: 4px solid #FFDCC7 ; 
     }
 }
+
+
+
+
+
+
