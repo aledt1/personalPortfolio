@@ -3,7 +3,7 @@
 /* estilo parametros generales*/
 body{
     background: url(../src/backM3.svg);
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Serif', serif !important;
     background-color: #050609;
 }
 header{
@@ -19,10 +19,8 @@ header{
 }
 .nav1{
     background-color: #3C0000;
-    font-family: 'Roboto Slab',serif;
     text-align: center;
 }    
-
 hr{
     border: 2px solid #FEFEDC;
     color: #FEFEDC;
@@ -47,65 +45,58 @@ a:hover{
 /*sección para estilo de los textos*/
 .txt01{ /* Titulo principal*/
     color: #FEFEDC;
-    font-family: 'Roboto Serif';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    display: flexbox;
-    align-items: center;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 .txt011{ /*Subtitulo principal*/
     color: #FEFEDC;
-    font-family: 'Roboto Serif';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    display: flexbox;
-    align-items: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 .txt013{ /*texto cursiva en sección 03*/
-    font-family: 'Roboto Serif';
     font-style: italic;
     font-weight: 300;
-    font-size: 16px;
-    display: flexbox;
-    align-items: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
     text-align: justify;
     color: #050609;
 }
 .txt11{ /*encabezados */
-    font-family: 'Roboto Serif';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    display: flexbox;
-    align-items: center;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
     text-align: center;
     color: #FEFEDC;
 }
 .txt101{ /*texto encabezado */
-    font-family: 'Roboto Serif';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     color: #FEFEDC;
 }
 .txt31{ /* titulos sección 3*/
-    font-family: 'Roboto Serif';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
-    display: flexbox;
-    align-items: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
     text-align: center;
     color: #050609;
 }
 .txt41{/*titulos tarjetas*/
-    font-family: 'Roboto Serif';
     font-style: italic;
     font-weight: 500;
     font-size: 14px;
@@ -115,7 +106,6 @@ a:hover{
     color: #050609;
 }
 .txt411{ /*texto terjetas*/
-    font-family: 'Roboto Serif';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -125,20 +115,18 @@ a:hover{
     color: #000000;
 }
 .txt51{ /* titulos sección 2*/
-    font-family: 'Roboto Serif';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     text-align: center;
     color: #FEFEDC;
 }
 .txt511{/*texto sección 2*/
-    font-family: 'Roboto Serif';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -160,6 +148,7 @@ a:hover{
 .btn-primary{
     background-color: #7d553a;
     border-color: #7d553a;
+    color: #FEFEDC;
 }
 .btn:hover{
     border: none;
@@ -183,35 +172,20 @@ a:hover{
 /* Estilo css para la versión movil*/
 @media only screen and (max-width: 575px){
    .conM1{ /*conM1 = contenedor Movil 1*/
-    margin-top: 50px;
-    }
-    .rm0{
-        background: #D9D9D9;
-        border: 4px solid #FFDCC7;
-        filter: blur(3px);
-        border-radius: 40px 40px 16px 16px;
-
+    margin-top: 40px;
     }
     .rm1{ /*Filas movil 1*/
         flex-direction: column;
-        padding-top: 25px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 0px;
-
+        padding: 15px 15px 0px 15px;
     }
     .rm2{
         flex-direction: column;
-        padding-top: 0px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 0px;
-        z-index: 2;
+        padding: 0px 15px 0px 15px;
     }
     
     .cardm1{/*diseños para cada carta cardm1 = carta Movil 1*/
         background-color: #3C0000;
-        padding: 25px;
+        padding: 20px;
         border-top: 4px solid #FFDCC7;
         border-left: 4px solid #FFDCC7;
         border-right: 4px solid #FFDCC7;
@@ -220,13 +194,13 @@ a:hover{
     }
     .cardm2{
         background-color: #7d553a;
-        padding: 25px;
+        padding: 20px;
         border-left: 4px solid #FFDCC7;
         border-right: 4px solid #FFDCC7;
     }
     .cardm3{
         background-color: #d69f7e;
-        padding: 25px;
+        padding: 20px;
         border-bottom: 4px solid #FFDCC7;
         border-left: 4px solid #FFDCC7;
         border-right: 4px solid #FFDCC7;
