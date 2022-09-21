@@ -1,5 +1,6 @@
 /* fuente importada de Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,300;1,8..144,500&display=swap');
+
 /* estilo parametros generales*/
 body{
     background: url(../src/backM3.svg);
@@ -41,6 +42,55 @@ a:hover{
 .accordion-button:focus{
     border-color: #FEFEDC;
 }
+.list1{
+    background-color: #F5D0C5;
+    color: #050609;
+    border-color: #F5D0C5;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+}
+.card{
+    background-color: #F5D0C5;
+    border-radius: 10px;
+}
+.navbar-toggler-icon{
+    background-color: #FEFEDC;
+}
+.btn-primary{
+    background-color: #7d553a;
+    border-color: #7d553a;
+    color: #FEFEDC;
+}
+.btn-primary:active{
+    background: #3C0000;
+    border: #000000;
+}
+.btn:hover{
+    border: none;
+    background-color: #3C0000;
+    color: #FEFEDC;
+    background: #3C0000;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.nav-toggler{
+    border: none;
+}
+.nav-toggler:focus{
+    box-shadow: none;
+}
+.btnContacto{
+    border: none;
+    background-color: #FFDCC7;
+    color: #050609;
+    font-family: Roboto Serif;
+}
+.cdSp{
+    padding: 5px;
+}
 
 /*sección para estilo de los textos*/
 .txt01{ /* Titulo principal*/
@@ -60,6 +110,7 @@ a:hover{
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-bottom: 0px;
 }
 .txt013{ /*texto cursiva en sección 03*/
     font-style: italic;
@@ -69,6 +120,7 @@ a:hover{
     justify-content: center;
     text-align: justify;
     color: #050609;
+    margin-bottom: 0px;
 }
 .txt11{ /*encabezados */
     font-style: normal;
@@ -86,6 +138,7 @@ a:hover{
     display: flex;
     justify-content: center;
     color: #FEFEDC;
+    margin-bottom: 0px;
 }
 .txt31{ /* titulos sección 3*/
     font-style: normal;
@@ -133,57 +186,21 @@ a:hover{
     color: #FEFEDC;
 }
 
-.list1{
-    background-color: #F5D0C5;
-    color: #050609;
-    border-color: #F5D0C5;
-}
-.card{
-    background-color: #F5D0C5;
-    border-radius: 10px;
-}
-.navbar-toggler-icon{
-    background-color: #FEFEDC;
-}
-.btn-primary{
-    background-color: #7d553a;
-    border-color: #7d553a;
-    color: #FEFEDC;
-}
-.btn:hover{
-    border: none;
-    background-color: #3C0000;
-    color: #FEFEDC;
-}
-.nav-toggler{
-    border: none;
-}
-.nav-toggler:focus{
-    box-shadow: none;
-}
-.btnContacto{
-    border: none;
-    background-color: #FFDCC7;
-    color: #050609;
-    font-family: Roboto Serif;
-}
-
-
 /* Estilo css para la versión movil*/
 @media only screen and (max-width: 575px){
    .conM1{ /*conM1 = contenedor Movil 1*/
     margin-top: 40px;
     }
-    .rm1{ /*Filas movil 1*/
+    .rM1{ /*Filas movil 1*/
         flex-direction: column;
         padding: 15px 15px 0px 15px;
     }
-    .rm2{
+    .rM2{
         flex-direction: column;
         padding: 0px 15px 0px 15px;
     }
     
-    .cardm1{/*diseños para cada carta cardm1 = carta Movil 1*/
+    .cardM1{/*diseños para cada carta cardm1 = carta Movil 1*/
         background-color: #3C0000;
         padding: 20px;
         border-top: 4px solid #FFDCC7;
@@ -192,13 +209,13 @@ a:hover{
         border-radius: 40px 40px 0px 0px;
 
     }
-    .cardm2{
+    .cardM2{
         background-color: #7d553a;
         padding: 20px;
         border-left: 4px solid #FFDCC7;
         border-right: 4px solid #FFDCC7;
     }
-    .cardm3{
+    .cardM3{
         background-color: #d69f7e;
         padding: 20px;
         border-bottom: 4px solid #FFDCC7;
@@ -210,26 +227,25 @@ a:hover{
 /* estilo css para la version tablet*/
 @media only screen and (min-width: 576px){
     .conT1{
-        margin-top: 25px;
+        margin-top: 50px;
         margin-bottom: 25px;
         text-align: center;
         justify-content: center;
     }
-    .rt1{ /*contenedor en tablet*/
+    .rT1{ /*contenedor en tablet*/
         flex-direction: row;
         padding-top: 25px;
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 0px;
     }
-    .rt2{ 
+    .rT2{ 
         flex-direction: row;
         padding-top: 0px;
         padding-left: 25px;
         padding-right: 25px;
     } 
-   
-    .cardt1{ /*diseños para cada carta en tablet*/
+    .cardT1{ /*diseños para cada carta en tablet*/
         background-color: #3c0000;
         padding: 30px 50px 30px 50px;
         border-radius: 40px 40px 0px 0px;
@@ -237,9 +253,9 @@ a:hover{
         border-left: 4px solid #FFDCC7;
         border-right: 4px solid #FFDCC7;
     }
-    .cardt2{
+    .cardT2{
         background-color: #774936;
-        padding: 30px;
+        padding: 30px 30px 50px 30px;
         border-radius: 0px 0px 0px 16px;
         border-left: 4px solid #FFDCC7;
         border-bottom: 4px solid #FFDCC7;
@@ -247,24 +263,24 @@ a:hover{
         align-items: center;
         
     }
-    .cardt3{
+    .cardT3{
         background-color: #d69f7e;
-        padding: 30px;
+        padding: 30px 50px 30px 30px;
         border-radius: 0px 0px 16px 0px;
         border-right: 4px solid #FFDCC7;
         border-bottom: 4px solid #FFDCC7;
     }
-    .cardt12{
+    .cardT12{
         background-color: #774936;
-        padding: 30px;
+        padding: 30px 50px 30px 50px;
         border-radius: 0px 0px 16px 16px;
         border-left: 4px solid #FFDCC7;
         border-bottom: 4px solid #FFDCC7;
         border-right: 4px solid #FFDCC7;
     }
-    .cardt13{
+    .cardT13{
         background-color: #d69f7e;
-        padding: 30px;
+        padding: 30px 50px 30px 50px;
         border-radius: 0px 0px 16px 16px;
         border-right: 4px solid #FFDCC7;
         border-bottom: 4px solid #FFDCC7;
@@ -273,52 +289,143 @@ a:hover{
 }
 /* estilo css para la versión desktop*/
 @media only screen and (min-width: 992px){
-    .conT1{
-        margin-top: 25px;
+    .txt01{ /* Titulo principal*/
+        color: #FEFEDC;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .txt011{ /*Subtitulo principal*/
+        color: #FEFEDC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .txt013{ /*texto cursiva en sección 03*/
+        font-style: italic;
+        font-weight: 300;
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        color: #050609;
+    }
+    .txt11{ /*encabezados */
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #FEFEDC;
+    }
+    .txt101{ /*texto encabezado */
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        color: #FEFEDC;
+    }
+    .txt31{ /* titulos sección 3*/
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #050609;
+    }
+    .txt41{/*titulos tarjetas*/
+        font-style: italic;
+        font-weight: 500;
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #050609;
+    }
+    .txt411{ /*texto terjetas*/
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        color: #000000;
+    }
+    .txt51{ /* titulos sección 2*/
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FEFEDC;
+    }
+    .txt511{/*texto sección 2*/
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FEFEDC;
+    }
+    .conD1{
+        margin-top: 75px;
         margin-bottom: 25px;
         text-align: center;
         justify-content: center;
     }
-    .rt1{ /*contenedor en tablet*/
+    .rD1{ /*contenedor en tablet*/
         flex-direction: row;
         padding-top: 25px;
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 0px;
     }
-    .rt2{ 
+    .rD2{ 
         flex-direction: row;
         padding-top: 0px;
         padding-left: 25px;
         padding-right: 25px;
     } 
-   
-    .cardt1{ /*diseños para cada carta en tablet*/
+    .cardD1{ /*diseños para cada carta en tablet*/
         background-color: #3c0000;
-        padding: 40px 150px 40px 150px;
+        padding: 50px 150px 50px 150px;
         border-radius: 40px 40px 0px 0px;
         border-top: 4px solid #FFDCC7;
         border-left: 4px solid #FFDCC7;
         border-right: 4px solid #FFDCC7;
     }
-    .cardt2{
+    .cardD2{
         background-color: #774936;
-        padding: 75px;
+        padding: 50px 50px 50px 50px; 
         border-radius: 0px 0px 0px 16px;
         border-left: 4px solid #FFDCC7;
         border-bottom: 4px solid #FFDCC7;
-        display: flex;
-        align-items: center;
+
         
     }
-    .cardt3{
+    .cardD3{
         background-color: #d69f7e;
-        padding: 75px;
+        padding: 50px 50px 50px 50px;
         border-radius: 0px 0px 16px 0px;
         border-right: 4px solid #FFDCC7;
         border-bottom: 4px solid #FFDCC7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .cardt12{
+    .cardD12{
         background-color: #774936;
         padding: 50px 150px 50px 150px;
         border-radius: 0px 0px 16px 16px;
@@ -326,18 +433,25 @@ a:hover{
         border-bottom: 4px solid #FFDCC7;
         border-right: 4px solid #FFDCC7;
     }
-    .cardt13{
+    .cardD13{
         background-color: #d69f7e;
-        padding: 30px;
+        padding: 50px 150px 50px 150px;
         border-radius: 0px 0px 16px 16px;
         border-right: 4px solid #FFDCC7;
         border-bottom: 4px solid #FFDCC7;
         border-left: 4px solid #FFDCC7 ; 
     }
+    .cardD31{
+        background-color: #d69f7e;
+        padding: 50px 50px 50px 50px;
+        border-radius: 0px 0px 16px 0px;
+        border-right: 4px solid #FFDCC7;
+        border-bottom: 4px solid #FFDCC7;
+
+    }
+    .list1{
+        font-weight: 400;
+        font-size: 20px;
+        text-align: left;
+    }
 }
-
-
-
-
-
-

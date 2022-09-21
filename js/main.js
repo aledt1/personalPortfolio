@@ -15,6 +15,7 @@ function cotizacion(ho,hc,iva,serv) {
     }
     return costoHoras;
 }
+
 //evento para validar campos y mostrar resultado en pantalla
 btnCalcular.addEventListener("click", function(event){ 
     event.preventDefault();
@@ -27,7 +28,27 @@ btnCalcular.addEventListener("click", function(event){
     let iva = document.getElementById("campoIva").checked;
     let camposTxt = document.getElementById("camposTexto");
     let campoTotal = document.getElementById("campoCostoFinal");
+    let flag = true;
 
+    if (!isNaN(nombre)){
+        document.getElementById("campoNombre").style.borderColor = "#FF0000";
+        flag = false;
+    } else{
+        document.getElementById("campoNombre").style.borderColor = "00FF00";
+    }
+
+    if (isNaN(horas)){
+        document.getElementById("campoHora").style.borderColor = "#FF0000";
+        flag = false;
+    } else{
+        document.getElementById("campoHora").style.borderColor = "00FF00";
+    }
+    if (isNaN(hcosto)){
+        document.getElementById("campoCosto").style.borderColor = "#FF0000";
+        flag = false;
+    } else{
+        document.getElementById("campoCosto").style.borderColor = "00FF00";
+    }
 
     camposTxt.innerHTML = `Fecha de cotización: ${fecha} <br/>Nombre del solicitante: ${nombre}, <br/>Correo: ${correo}, <br/>Servicios adicionales: ${servicios}`;
     campoTotal.innerHTML = `<strong>Precio total: </strong>$${cotizacion(horas, hcosto, iva, servicios).toFixed(2)}`;
