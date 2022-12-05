@@ -1,44 +1,16 @@
-@import url(
-    'https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap'
-    );
-*{
-    font-family: 'Work Sans', sans-serif;
-}
+/*Estilo CSS general*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
 
+*{font-family: 'Work Sans', sans-serif;}
+
+/*Estilo del menpu de navegacion*/
 header nav{
     width: 100%;
-    height: 75px;
+    height: 100px;
     background-color: #19100e;
 }
 
-nav div{
-    background-color: #19100e;
-
-}
-
-section.containerSection1 div h1{
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
-    color: #f9f9f9;
-}
-section.containerSection2 div h1{
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
-    color: #19100e;
-}
-
-.containerSection1{
-    background-color: #7590ad;
-}
-.containerSection2{
-    background-color: #f9f9f9;
-}
-
-footer{
-    background-color: #19100e;
-}
+nav div{background-color: #19100e;}
 
 a span#title{
     color: #f9f9f9;
@@ -64,7 +36,56 @@ button.navbar-toggler span {
     font-size: 0.9em;
 }
 
-/* Media queries for position*/
+/*estilo para los contenedores padre*/
+.containerSection1{background-color: #7590ad;}
+
+.containerSection2{background-color: #e6e8ef;}
+
+section.containerSection1 div h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #e6e8ef;
+    margin-bottom: 15px;
+}
+section.containerSection2 div h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #19100e;
+}
+
+section.containerSection1 div h3{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    color: #e6e8ef;
+    margin-top: 15px;
+}
+section.containerSection1 hr{
+    border: 4px solid #e6e8ef;
+    border-radius: 5px;
+    width: 300px;
+    height: 0px;
+    margin: auto;
+}
+
+section.containerSection2 hr{
+    border: 4px solid #19100e;
+    border-radius: 5px;
+    width: 300px;
+    height: 0px;
+    margin: auto;
+}
+
+
+.containerSection2 p{
+    margin-top: 25px;
+}
+
+footer{background-color: #19100e;}
+
+/*Estilos CSS para distintas vistas de dispositivos*/
 @media (min-width: 576px){
     .containerMB{
         margin: 0px;
@@ -77,6 +98,13 @@ button.navbar-toggler span {
     }
     #menu{
         padding: 0px 50px;
+    }
+    #fotoHome{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: auto;
     }
 }
 
@@ -94,9 +122,44 @@ button.navbar-toggler span {
         position: sticky;
     }
 
+    #fotoHome{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 330px;
+        height: auto;
+    }
+
 }
 
 @media (min-width: 992px){
+    .containerMB{
+        margin: 0px;
+        padding: 50px 200px;
+        display: block;
+        
+    }
+    #menu{
+        padding: 0px 200px;
+        
+    }
+    #navbarNav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #fotoHome{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+        width: 300px;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 1200px){
     .containerMB{
         margin: 0px;
         padding: 50px 300px;
@@ -105,13 +168,28 @@ button.navbar-toggler span {
     }
     #menu{
         padding: 0px 300px;
+        
+    }
+    #navbarNav{
+        display: flex;
+        justify-content: flex-end;
     }
 
+    #fotoHome{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 330px;
+        height: auto;
+    }
 }
 
 
+
+/*paletas de colores*/
 .color1 {color: #19100e;}
 .color2 {color: #5e4c46;}
 .color3 {color: #7590ad;}
 .color4 {color: #e6e8ef;}
 .color5 {color: #f9f9f9;}
+
