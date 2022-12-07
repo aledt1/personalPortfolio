@@ -83,6 +83,23 @@ section.containerSection2 hr{
     margin-top: 25px;
 }
 
+
+#containerCards{
+    margin-top: 25px;
+    display: flex;
+}
+section form input.form-control{
+    background-color: #7590ad;
+    border: none;
+    border-radius: 10px;
+    color: #e6e8ef;
+}
+
+section form input.form-control:focus{
+    background-color:#19100e;
+    color: #e6e8ef;
+}
+
 footer{background-color: #19100e;}
 
 /*Estilos CSS para distintas vistas de dispositivos*/
