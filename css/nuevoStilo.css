@@ -3,7 +3,7 @@
 
 *{font-family: 'Work Sans', sans-serif;}
 
-/*Estilo del menpu de navegacion*/
+/*Estilo del menu de navegacion*/
 header nav{
     width: 100%;
     height: 100px;
@@ -61,6 +61,7 @@ section.containerSection1 div h3{
     font-weight: 300;
     color: #e6e8ef;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 section.containerSection1 hr{
     border: 4px solid #e6e8ef;
@@ -78,29 +79,88 @@ section.containerSection2 hr{
     margin: auto;
 }
 
-
+/*estilo elementos generales */
 .containerSection2 p{
     margin-top: 25px;
 }
 
+#lemaTitulo{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #e6e8ef;
+    margin-top: 25px;
+}
+
+#lema{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    color: #e6e8ef;
+    margin-top: 15px;
+}
 
 #containerCards{
     margin-top: 25px;
     display: flex;
+    justify-content: space-between;
 }
-section form input.form-control{
+
+.card{
+    background-color: #e6e8ef;
+    margin-left: 10px;
+    text-align: center;
+    width: 25%;
+    border: none;
+    border-radius: 10px;
+}
+
+.card a{
+    color: #19100e;
+    text-decoration: none;
+}
+
+div#containerCards i{
+    font-size: 6em;
+    text-align: center;
+    color:#19100e;
+}
+
+.form-control{
     background-color: #7590ad;
     border: none;
     border-radius: 10px;
     color: #e6e8ef;
+    
 }
 
-section form input.form-control:focus{
-    background-color:#19100e;
+.form-control:focus{
+    background-color:#19100e !important;
     color: #e6e8ef;
+    box-shadow: 0 0 0 0.25rem #7590ad !important;
 }
 
 footer{background-color: #19100e;}
+
+section.containerMBF h5{
+    font-weight: 700;
+    text-align: center;
+}
+
+section.containerMBF p{text-align: center;}
+
+div.containerF2{
+    background-color: #110d0c;
+    padding: 20px 0 20px 0;
+
+}
+.containerF2 p{
+    font-size: 12px;
+    font-weight: 300;
+    color: #e6e8ef;
+    text-align: center;
+    margin: 0;
+}
 
 /*Estilos CSS para distintas vistas de dispositivos*/
 @media (min-width: 576px){
@@ -199,14 +259,12 @@ footer{background-color: #19100e;}
         width: 330px;
         height: auto;
     }
+    .containerMBF{
+        margin: 0px;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        color: #e6e8ef;
+        display: flex;
+        justify-content: space-around;
+    }
 }
-
-
-
-/*paletas de colores*/
-.color1 {color: #19100e;}
-.color2 {color: #5e4c46;}
-.color3 {color: #7590ad;}
-.color4 {color: #e6e8ef;}
-.color5 {color: #f9f9f9;}
-
