@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="es-MX">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="content-type" content="text/html">
@@ -9,7 +8,6 @@
   <meta name="author" content="Alexander-Delgado-Torres">
   <meta name="keywords" content="portfolio, developer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Alexander Delgado Torres | Desarrollador Java FullStack - Geocientífico</title>
   <link rel="shortcut icon" href="/src/logo1.ico" type="image/x-icon">
   <!--Estilo CSS bootstrap 5.2-->
@@ -26,12 +24,13 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid" id="menu">
         <!--Nombre | inicio-->
+        <!--<p><span id="title">ALEXANDER DT</span></p>-->
         <a class="navbar-brand" href="#">
           <span id="title">ALEXANDER DT</span>
         </a>
         <!--Menú de hamburguesa | inicio-->
         <button type="button" class="btn navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="botonMenu">
           <span>MENU</span>
           <span></span>
         </button>
@@ -74,6 +73,7 @@
       <div class="container-fluid containerMB">
         <h1>Acerca de mi</h1>
         <hr />
+        <div id="contenedorHijo">
         <p>Hola, soy Alexander Delgado, Desarrollador Full Stack y Geocientífico. <br /> <br />
           Soy un apasionado por el mundo geek, las Ciencias de la Tierra, el Desarrollo Web y las nuevas tecnologías.
           He participado en varios proyectos para distintos emprendimientos web y de ciencia.<br /> <br />
@@ -85,6 +85,7 @@
           en cartografía digital. <br /><br />
           Conoce más acerca de mi trabajo y bienvenidos a mi portal.
         </p>
+      </div>
       </div>
     </section>
     <!--Mi trabajo-->
@@ -128,6 +129,7 @@
       <div class="container-fluid containerMB">
         <h1>Contáctame</h1>
         <hr />
+        <div id="contenedorHijo">
         <form>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
@@ -147,6 +149,7 @@
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+        </div>
       </div>
 
     </section>
@@ -176,12 +179,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-    crossorigin="anonymous"></script>
+  <script src="/js/nuevomain.js"></script>  
 </body>
-
 </html>
