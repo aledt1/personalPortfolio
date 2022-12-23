@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es-MX">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="content-type" content="text/html">
@@ -74,18 +75,19 @@
         <h1>Acerca de mi</h1>
         <hr />
         <div id="contenedorHijo">
-        <p>Hola, soy Alexander Delgado, Desarrollador Full Stack y Geocientífico. <br /> <br />
-          Soy un apasionado por el mundo geek, las Ciencias de la Tierra, el Desarrollo Web y las nuevas tecnologías.
-          He participado en varios proyectos para distintos emprendimientos web y de ciencia.<br /> <br />
-          Tengo conocimientos en desarrollo Front-End en HTML5, CSS3, JavaScript, Bootstrap y React.
-          También manejo el desarrollo Back-End en Java, bases de datos relacionales (MySQL), SpringBoot (Gradle) y PHP.
-          <br /> <br />
-          Además soy especialista en Geofísica Aplicada de Métodos Eléctricos y manejo los Sistemas de Información
-          Geográfica
-          en cartografía digital. <br /><br />
-          Conoce más acerca de mi trabajo y bienvenidos a mi portal.
-        </p>
-      </div>
+          <p>Hola, soy Alexander Delgado, Desarrollador Full Stack y Geocientífico. <br /> <br />
+            Soy un apasionado por el mundo geek, las Ciencias de la Tierra, el Desarrollo Web y las nuevas tecnologías.
+            He participado en varios proyectos para distintos emprendimientos web y de ciencia.<br /> <br />
+            Tengo conocimientos en desarrollo Front-End en HTML5, CSS3, JavaScript, Bootstrap y React.
+            También manejo el desarrollo Back-End en Java, bases de datos relacionales (MySQL), SpringBoot (Gradle) y
+            PHP.
+            <br /> <br />
+            Además soy especialista en Geofísica Aplicada de Métodos Eléctricos y manejo los Sistemas de Información
+            Geográfica
+            en cartografía digital. <br /><br />
+            Conoce más acerca de mi trabajo y bienvenidos a mi portal.
+          </p>
+        </div>
       </div>
     </section>
     <!--Mi trabajo-->
@@ -93,8 +95,6 @@
       <div class="container-fluid containerMB">
         <h1>Mi trabajo</h1>
         <hr />
-        <div>
-        </div>
         <div id="containerCards">
           <div class="card">
             <i class="bi bi-cart4"></i>
@@ -105,13 +105,13 @@
           <div class="card">
             <i class="bi bi-file-image"></i>
             <a href="#">
-              <h5>Portal Geopatrimonio</h5>
+              <h5>Portal <br>Geopatrimonio</h5>
             </a>
           </div>
           <div class="card">
             <i class="bi bi-journal-text"></i>
             <a href="#">
-              <h5>Artículo Científico</h5>
+              <h5>Artículo <br>Científico</h5>
             </a>
           </div>
           <div class="card">
@@ -130,25 +130,31 @@
         <h1>Contáctame</h1>
         <hr />
         <div id="contenedorHijo">
-        <form>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput2" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="exampleFormControlInput2">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput3" class="form-label">Número telefónico</label>
-            <input type="tel" class="form-control" id="exampleFormControlInput3">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+          <span class="alert alert-danger" role="alert" id="alertaError" style="display: none">Por favor revise que todos campos esten llenados correctamente</span>
+          <br/>
+          <form id="formulario">
+            <div class="mb-3">
+              <label for="nombreForm" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombreForm">
+              <p class="invalid-feedback">Verifique que el nombre contenga más de tres caracteres.</p>
+            </div>
+            <div class="mb-3">
+              <label for="correoForm" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correoForm">
+              <p class="invalid-feedback">Verifique que el correo sea correcto.</p>
+            </div>
+            <div class="mb-3">
+              <label for="numeroForm" class="form-label">Número telefónico</label>
+              <input type="tel" class="form-control" id="numeroForm">
+              <p class="invalid-feedback">Verifique que el número contenga diez caracteres.</p>
+            </div>
+            <div class="mb-3">
+              <label for="mensajeForm" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensajeForm" rows="3"></textarea>
+              <p class="invalid-feedback">Verifique que el mensaje contenga más de diez caracteres.</p>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar</button>
+          </form>
         </div>
       </div>
 
@@ -164,10 +170,10 @@
       <div id="redesFooter">
         <h5>MIS REDES</h5>
         <div>
-        <span><i class="bi bi-whatsapp"></i></span>
-        <span><i class="bi bi-linkedin"></i></span>
-        <span><i class="bi bi-github"></i></span>
-      </div>
+          <span><i class="bi bi-whatsapp"></i></span>
+          <span><i class="bi bi-linkedin"></i></span>
+          <span><i class="bi bi-github"></i></span>
+        </div>
       </div>
     </section>
   </footer>
@@ -179,6 +185,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-  <script src="/js/nuevomain.js"></script>  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/nuevomain.js"></script>
+  
 </body>
+
 </html>
